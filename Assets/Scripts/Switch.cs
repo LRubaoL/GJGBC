@@ -24,16 +24,19 @@ public class Switch : MonoBehaviour {
             switchPlayer = !switchPlayer;
         }
     }
-    void SwitchTags() {
-            if (switchPlayer)
+    void SwitchTags()
+    {
+
+        if (switchPlayer)
         {
             m_PlayerOne.tag = "Player";
             m_PlayerTwo.tag = "StaticPlayer";
         }
-        else {
+        else
+        {
             m_PlayerOne.tag = "StaticPlayer";
             m_PlayerTwo.tag = "Player";
         }
+        GameObject.FindGameObjectWithTag("SceneCamera").GetComponent<Camera_Behaviour>().PlayerChange();
     }
-
 }

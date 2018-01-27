@@ -7,7 +7,7 @@ public class Camera_Behaviour : MonoBehaviour {
 
 	[SerializeField] GameObject player;
 
-	float smoothSpeed = 0.4f;
+	float smoothSpeed = 0.3f;
 	public Vector3 offset;
     Vector3 velocity;
 
@@ -26,5 +26,8 @@ public class Camera_Behaviour : MonoBehaviour {
         transform.position = smoothedPos;
 
 
+    }
+    public void PlayerChange() {
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 }

@@ -8,14 +8,17 @@ public class PlayerMovement : MonoBehaviour {
 	[SerializeField] float rotateSpeed;
     [SerializeField] float jumpForce;
     [SerializeField] float moveSpeed;
-    [SerializeField] float doubleJumpForce;
-    
+    [SerializeField] public float doubleJumpForce;
+
+    public bool isCube;
     
     public bool grounded = false;
-    bool jump = false;
-    bool doubleJump = false;
+    public bool jump = false;
 
-    Rigidbody rbd;
+    public bool doubleJump = false;
+    
+
+    public Rigidbody rbd;
 
     
 
@@ -45,8 +48,8 @@ public class PlayerMovement : MonoBehaviour {
 			Jump();
             print ("Jump");
         }
-		if (Input.GetButtonDown ("Jump") && !grounded && doubleJump && gameObject.tag == "Player") { 
-			DoubleJump();
+		if (Input.GetButtonDown ("Jump") && !grounded && isCube && doubleJump && gameObject.tag == "Player") { 
+			GetComponent<CubeBehaviour>().DoubleJump();
 
         }
     }
@@ -94,12 +97,6 @@ void Jump() {
 			doubleJump = true;
 		}
 	}
-		void DoubleJump(){
-        if (doubleJump && gameObject.tag == "Player") {
-            rbd.AddForce(new Vector2(0, doubleJumpForce));
-            doubleJump = false;
-           
-	}
-    }
+
 
 }

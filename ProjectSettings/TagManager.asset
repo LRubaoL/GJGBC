@@ -3,14 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags: []
-=======
-  tags:
-  - Ground
-  - SceneCamera
-  - StaticPlayer
->>>>>>> 6c5214f8e335e8ef7492bdbcbd5a9222f77936a8
   layers:
   - Default
   - TransparentFX

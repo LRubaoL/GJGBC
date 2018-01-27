@@ -23,13 +23,19 @@ public class PlayerMovement : MonoBehaviour {
 
 
     void Start() {
-		playerCam = GameObject.FindGameObjectWithTag ("SceneCamera").GetComponent<Camera>();
-
+        if (playerCam == null)
+        {
+            playerCam = GameObject.FindGameObjectWithTag("SceneCamera").GetComponent<Camera>();
+        }
+        else {
+            return;
+        }
         rbd = GetComponent<Rigidbody>();
     }
 
     void Update() {
-		if (grounded) {
+      
+        if (grounded) {
 			jump = true;
 
 		}	
@@ -55,12 +61,12 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-            //Movement Translation
+            
             float h = Input.GetAxis("Horizontal") * moveSpeed;
             h *= Time.deltaTime;
-            transform.Translate(h, 0, 0, Space.World);
-			
-			//Aim();        
+            transform.Translate(h, 0, 0, Space.Self);
+
+        //Aim();        
     }
 
     /*void Aim() {

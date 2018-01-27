@@ -60,10 +60,10 @@ public class PlayerMovement : MonoBehaviour {
             h *= Time.deltaTime;
             transform.Translate(h, 0, 0, Space.World);
 			
-			Aim();        
+			//Aim();        
     }
 
-    void Aim() {
+    /*void Aim() {
         if (!grounded) {
 
             Vector3 mousePosition = Input.mousePosition;
@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour {
 			Quaternion _rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 			transform.rotation = Quaternion.Slerp (transform.rotation, _rotation, rotateSpeed*Time.deltaTime);
         }
-    }
+    }*/
 
 void Jump() {
 		if (jump) {

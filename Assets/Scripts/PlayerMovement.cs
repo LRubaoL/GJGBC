@@ -35,16 +35,17 @@ public class PlayerMovement : MonoBehaviour {
 
     void Update() {
       
-        if (grounded) {
+        if (grounded && gameObject.tag == "Player") {
 			jump = true;
 
 		}	
 
-		if (Input.GetButtonDown("Jump")&& grounded ||Input.GetKeyDown(KeyCode.W) && grounded){
+		if (Input.GetButtonDown("Jump")&& grounded ||Input.GetKeyDown(KeyCode.W) && grounded && gameObject.tag == "Player")
+        {
 			Jump();
             print ("Jump");
         }
-		if (Input.GetButtonDown ("Jump") && !grounded && doubleJump) { //&& isKnockback == false) {
+		if (Input.GetButtonDown ("Jump") && !grounded && doubleJump && gameObject.tag == "Player") { 
 			DoubleJump();
 
         }
@@ -61,10 +62,12 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-            
+        if (gameObject.tag == "Player")
+        {
             float h = Input.GetAxis("Horizontal") * moveSpeed;
             h *= Time.deltaTime;
             transform.Translate(h, 0, 0, Space.World);
+        }
 
         //Aim();        
     }
@@ -85,14 +88,14 @@ public class PlayerMovement : MonoBehaviour {
     }*/
 
 void Jump() {
-		if (jump) {
+		if (jump && gameObject.tag == "Player") {
 			rbd.AddForce (new Vector2 (0, jumpForce));
 			jump = false;
 			doubleJump = true;
 		}
 	}
 		void DoubleJump(){
-        if (doubleJump) {
+        if (doubleJump && gameObject.tag == "Player") {
             rbd.AddForce(new Vector2(0, doubleJumpForce));
             doubleJump = false;
            

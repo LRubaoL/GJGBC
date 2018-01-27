@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour {
             
             float h = Input.GetAxis("Horizontal") * moveSpeed;
             h *= Time.deltaTime;
-            transform.Translate(h, 0, 0, Space.Self);
+            transform.Translate(h, 0, 0, Space.World);
 
         //Aim();        
     }

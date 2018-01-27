@@ -25,8 +25,7 @@ public class Switch : MonoBehaviour {
         }
     }
     void SwitchTags() {
-        print("works");
-        if (switchPlayer)
+            if (switchPlayer)
         {
             m_PlayerOne.tag = "Player";
             m_PlayerTwo.tag = "StaticPlayer";

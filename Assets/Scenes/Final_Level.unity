@@ -2002,7 +2002,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1308298529971184, guid: 417e5046e9a70f746b20587fbbc73e1e, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 417e5046e9a70f746b20587fbbc73e1e, type: 2}
@@ -7250,7 +7250,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1722804379990988, guid: ceb7ad915f923ec49b0751cd7b1a8412, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: StaticPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 1722804379990988, guid: ceb7ad915f923ec49b0751cd7b1a8412, type: 2}
       propertyPath: m_IsActive

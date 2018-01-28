@@ -8,6 +8,20 @@ public class Switch : MonoBehaviour {
     [SerializeField] GameObject m_PlayerOne;
     [SerializeField] GameObject m_PlayerTwo;
 
+    [SerializeField] GameObject text;
+
+    private void Awake()
+    {
+        if (text == null)
+        {
+            return;
+        }
+        else
+        {
+            text.SetActive(false);
+        }
+    }
+
     private void FixedUpdate()
     {
         if (timer > 0) {
@@ -15,14 +29,25 @@ public class Switch : MonoBehaviour {
         }
     }
 
-    private void OnTriggerStay (Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" && Input.GetKeyUp(KeyCode.T)&& timer <=0)
+        if (other.gameObject.tag == "Player") {
+            ShowText();
+        }
+        if (other.gameObject.tag == "Player" && Input.GetKeyUp(KeyCode.Tab) && timer <= 0)
         {
             timer = 1f;
             SwitchTags();
             switchPlayer = !switchPlayer;
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            HideText();
+        }
+    
     }
     void SwitchTags()
     {
@@ -38,5 +63,12 @@ public class Switch : MonoBehaviour {
             m_PlayerTwo.tag = "Player";
         }
         GameObject.FindGameObjectWithTag("SceneCamera").GetComponent<Camera_Behaviour>().PlayerChange();
+    }
+    void ShowText() {
+        text.SetActive(true);
+    }
+    void HideText()
+    {
+        text.SetActive(false);
     }
 }

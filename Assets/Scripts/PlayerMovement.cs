@@ -53,12 +53,12 @@ public class PlayerMovement : MonoBehaviour {
 
         }
     }
-	void OnCollisionStay(Collision c){
+	void OnTriggerStay(Collider c){
 		if (c.gameObject.tag == "Ground") {
 			grounded = true;
 		} 
 	}
-	void OnCollisionExit(Collision c){
+	void OnTriggerExit(Collider c){
 		if (c.gameObject.tag == "Ground" || c.gameObject.tag == "Player") {
 		grounded = false;
 		}

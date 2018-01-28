@@ -57,11 +57,26 @@ public class PlayerMovement : MonoBehaviour {
 		if (c.gameObject.tag == "Ground") {
 			grounded = true;
 		} 
+        
+        // attaches player to moving platform
+        if(c.gameObject.tag == "AnimPlatform")
+        {
+            grounded = true;
+            transform.parent = c.transform;
+        }
+
 	}
 	void OnTriggerExit(Collider c){
 		if (c.gameObject.tag == "Ground" || c.gameObject.tag == "Player") {
 		grounded = false;
 		}
+
+        // detaches player from moving platform
+        if (c.gameObject.tag == "AnimPlatform")
+        {
+            grounded = false;
+            transform.parent = null;
+        }
 	}
 
 	void FixedUpdate() {

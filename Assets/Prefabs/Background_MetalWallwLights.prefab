@@ -9,18 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1359645863307834}
+  m_RootGameObject: {fileID: 1685121730564644}
   m_IsPrefabParent: 1
---- !u!1 &1359645863307834
+--- !u!1 &1685121730564644
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4267282108814148}
-  - component: {fileID: 33906123593954196}
-  - component: {fileID: 23970000835997538}
+  - component: {fileID: 4604690744723672}
+  - component: {fileID: 33319550594392608}
+  - component: {fileID: 23534955981243328}
   m_Layer: 0
   m_Name: Background_MetalWallwLights
   m_TagString: Untagged
@@ -28,25 +28,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4267282108814148
+--- !u!4 &4604690744723672
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1359645863307834}
+  m_GameObject: {fileID: 1685121730564644}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.20484, y: 6.75, z: -0.26}
-  m_LocalScale: {x: 0.87, y: 0.86999995, z: 0.86999995}
+  m_LocalPosition: {x: -80.115, y: 6.7498, z: -1.0402}
+  m_LocalScale: {x: 1.8848282, y: 1.884828, z: 1.884828}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23970000835997538
+--- !u!23 &23534955981243328
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1359645863307834}
+  m_GameObject: {fileID: 1685121730564644}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -76,10 +76,10 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33906123593954196
+--- !u!33 &33319550594392608
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1359645863307834}
+  m_GameObject: {fileID: 1685121730564644}
   m_Mesh: {fileID: 4300000, guid: 590b41e69ddd7f54a9a9d2ba3ec2c194, type: 3}

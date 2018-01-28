@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6734fdd2f2fc58343b7051f81572abcf
-timeCreated: 1517141098
+timeCreated: 1517156776
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -45,7 +45,7 @@ SubstanceImporter:
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
-      scale: {x: 96, y: 40}
+      scale: {x: 48, y: 40}
       generateMipmaps: 1
       generateAllOutputs: 0
       animationUpdateRate: 42
@@ -54,7 +54,7 @@ SubstanceImporter:
       texEnvs:
       - _BumpMap:
           texture: {instanceID: 0}
-          scale: {x: 96, y: 40}
+          scale: {x: 48, y: 40}
           offset: {x: 0, y: 0}
       - _DetailAlbedoMap:
           texture: {instanceID: 0}
@@ -70,23 +70,23 @@ SubstanceImporter:
           offset: {x: 0, y: 0}
       - _EmissionMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 48, y: 40}
           offset: {x: 0, y: 0}
       - _MainTex:
           texture: {instanceID: 0}
-          scale: {x: 96, y: 40}
+          scale: {x: 48, y: 40}
           offset: {x: 0, y: 0}
       - _MetallicGlossMap:
           texture: {instanceID: 0}
-          scale: {x: 96, y: 40}
+          scale: {x: 48, y: 40}
           offset: {x: 0, y: 0}
       - _OcclusionMap:
           texture: {instanceID: 0}
-          scale: {x: 96, y: 40}
+          scale: {x: 48, y: 40}
           offset: {x: 0, y: 0}
       - _ParallaxMap:
           texture: {instanceID: 0}
-          scale: {x: 96, y: 40}
+          scale: {x: 48, y: 40}
           offset: {x: 0, y: 0}
       floats:
       - _BumpScale: 1
@@ -162,9 +162,9 @@ SubstanceImporter:
     prototypeName: Floor
     shaderName: 
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
+    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
     renderQueue: -1
-    lightmapFlags: 4
+    lightmapFlags: 1
     inputs:
     - name: $outputsize
       value:
@@ -259,7 +259,7 @@ SubstanceImporter:
       - _ZWrite: 1
       colors:
       - _Color: {r: 1, g: 1, b: 1, a: 1}
-      - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      - _EmissionColor: {r: 0.61764705, g: 0.61764705, b: 0.61764705, a: 1}
     textureParameters:
     - name: Floor_basecolor
       alphaSource: 6
@@ -305,8 +305,8 @@ SubstanceImporter:
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
-      textureWidth: 512
-      textureHeight: 512
+      textureWidth: 2048
+      textureHeight: 2048
       textureFormat: 0
       loadingBehavior: 1
   deletedPrototypes: []

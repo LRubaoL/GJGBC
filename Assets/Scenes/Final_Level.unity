@@ -4934,6 +4934,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 9226d1b1937c87c4ca625f2522bf6a21, type: 2}
+--- !u!1 &1544090066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1544090067}
+  m_Layer: 0
+  m_Name: Killzone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1544090067
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544090066}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -72.294, y: 6.76, z: -1.04}
+  m_LocalScale: {x: 1.894689, y: 1.8946885, z: 1.8946885}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1579926091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6601,7 +6629,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4753479524340166, guid: 5b5a57417b5bb7a48a6186a1eada01bc, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1726866955271408, guid: 5b5a57417b5bb7a48a6186a1eada01bc, type: 2}
       propertyPath: m_Name

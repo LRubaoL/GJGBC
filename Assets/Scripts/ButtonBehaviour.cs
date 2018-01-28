@@ -8,12 +8,14 @@ public class ButtonBehaviour : MonoBehaviour {
     Animator AC;
     bool buttonTriggered;
     public string buttonName;
+    Light lit;
 
 
     void Start()
     {
         buttonTriggered = false;
         AC = target.GetComponent<Animator>();
+        lit = gameObject.GetComponent<Light>();
     }
 
 
@@ -36,6 +38,7 @@ public class ButtonBehaviour : MonoBehaviour {
         if (buttonTriggered == true)
         {
             AC.SetBool(buttonName, true);
+            lit.intensity = 1;
         }
     }
 }

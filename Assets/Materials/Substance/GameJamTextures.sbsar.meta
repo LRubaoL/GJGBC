@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6734fdd2f2fc58343b7051f81572abcf
-timeCreated: 1517156776
+timeCreated: 1517163333
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -162,9 +162,9 @@ SubstanceImporter:
     prototypeName: Floor
     shaderName: 
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
+    shaderKeywords: _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
     renderQueue: -1
-    lightmapFlags: 1
+    lightmapFlags: 4
     inputs:
     - name: $outputsize
       value:

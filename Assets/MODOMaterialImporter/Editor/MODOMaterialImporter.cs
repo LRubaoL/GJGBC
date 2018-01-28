@@ -1473,20 +1473,20 @@ public class MODOMaterialImporter : AssetPostprocessor
 			TextureImporter textureImporter = assetImporter as TextureImporter;
 			if ((pendingTexture.texture.slot == "_BumpMap") || (pendingTexture.texture.slot == "_DetailNormalMap"))
 			{
-				if (textureImporter.textureType != TextureImporterType.Bump)
+				if (textureImporter.textureType != TextureImporterType.NormalMap)
 				{
-					textureImporter.textureType = TextureImporterType.Bump;
+					textureImporter.textureType = TextureImporterType.NormalMap;
 				}
 			}
 			else
 			{
 				if (pendingTexture.texture.colorspace == MODOColorspace.sRGB)
 				{
-					textureImporter.textureType = TextureImporterType.Image;
+					textureImporter.textureType = TextureImporterType.Default;
 				}
 				else if (pendingTexture.texture.colorspace == MODOColorspace.linear)
 				{
-					textureImporter.textureType = TextureImporterType.Advanced;
+					textureImporter.textureType = TextureImporterType.Default;
 					textureImporter.linearTexture = true;
 				}
 			}

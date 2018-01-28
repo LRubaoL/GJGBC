@@ -10,7 +10,7 @@ public class ButtonBehaviour : MonoBehaviour {
 
 
     void Translate() {
-
+        target.Translate(finalPosition.position, Space.World);
     }
 
 }

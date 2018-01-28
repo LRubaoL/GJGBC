@@ -31,7 +31,7 @@ public class Switch : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player") {
+        if (other.gameObject.tag == "Player"&& text != null) {
             ShowText();
         }
         if (other.gameObject.tag == "Player" && Input.GetKeyUp(KeyCode.Tab) && timer <= 0)
@@ -43,7 +43,7 @@ public class Switch : MonoBehaviour {
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && text !=null)
         {
             HideText();
         }

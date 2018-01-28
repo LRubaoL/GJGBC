@@ -11,7 +11,8 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] public float doubleJumpForce;
 
     public bool isCube;
-    
+    public bool isSphere;
+
     public bool grounded = false;
     public bool jump = false;
 
@@ -46,7 +47,6 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetButtonDown("Jump")&& grounded ||Input.GetKeyDown(KeyCode.W) && grounded && gameObject.tag == "Player")
         {
 			Jump();
-            print ("Jump");
         }
 		if (Input.GetButtonDown ("Jump") && !grounded && isCube && doubleJump && gameObject.tag == "Player") { 
 			GetComponent<CubeBehaviour>().DoubleJump();
@@ -72,11 +72,21 @@ public class PlayerMovement : MonoBehaviour {
             i =+ Time.deltaTime*450;
             rbd.AddForce(Vector3.down * i, ForceMode.Force);
         }
+
         if (gameObject.tag == "Player")
         {
             float h = Input.GetAxis("Horizontal") * moveSpeed;
-            h *= Time.deltaTime;
-            transform.Translate(h, 0, 0, Space.World);
+           
+            if (isSphere)
+            {
+                h *= Time.deltaTime *2;
+                transform.Translate(h, 0, 0, Space.World);
+            }
+            else
+            {
+                h *= Time.deltaTime;
+                transform.Translate(h, 0, 0, Space.World);
+            }
         }
 
           

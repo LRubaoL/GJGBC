@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 65585406419968926}
   - component: {fileID: 114780014173957284}
   - component: {fileID: 108634305767770592}
-  - component: {fileID: 95874411430859064}
+  - component: {fileID: 95254089986397100}
   m_Layer: 0
   m_Name: Button_Y
   m_TagString: Untagged
@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1220093320413526}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 2.5, y: 12.71, z: -138.95044}
+  m_LocalPosition: {x: 2.5, y: 12.71, z: -139.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224722145959588164}
@@ -134,7 +134,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.568981, y: 2.568981, z: 10.503452}
   m_Center: {x: 0, y: 0, z: 5.251726}
---- !u!95 &95874411430859064
+--- !u!95 &95254089986397100
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -333,7 +333,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1303244460623982}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 3.7899933}
+  m_LocalPosition: {x: 0, y: 0, z: 1.553}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 224434062373786098}

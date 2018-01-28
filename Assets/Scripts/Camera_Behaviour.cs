@@ -7,7 +7,7 @@ public class Camera_Behaviour : MonoBehaviour {
 
 	[SerializeField] GameObject player;
 
-	float smoothSpeed = 0.3f;
+	float smoothSpeed = 0.15f;
 	public Vector3 offset;
     Vector3 velocity;
 

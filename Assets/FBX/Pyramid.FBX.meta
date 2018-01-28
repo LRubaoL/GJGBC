@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a80ad8be3deb8684bab1c114831734cf
-timeCreated: 1517112418
+guid: c16b941a70581664dae128bc03ee6e6e
+timeCreated: 1517122476
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Pyramid001
+    4300000: Pyramid
   materials:
     importMaterials: 1
     materialName: 0

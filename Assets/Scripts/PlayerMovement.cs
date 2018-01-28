@@ -65,6 +65,13 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
+
+        if (!grounded)
+        {
+            float i;
+            i =+ Time.deltaTime*450;
+            rbd.AddForce(Vector3.down * i, ForceMode.Force);
+        }
         if (gameObject.tag == "Player")
         {
             float h = Input.GetAxis("Horizontal") * moveSpeed;
@@ -72,23 +79,9 @@ public class PlayerMovement : MonoBehaviour {
             transform.Translate(h, 0, 0, Space.World);
         }
 
-        //Aim();        
+          
     }
 
-    /*void Aim() {
-        if (!grounded) {
-
-            Vector3 mousePosition = Input.mousePosition;
-            mousePosition.z = 5;
-            Vector3 objectPos = playerCam.WorldToScreenPoint(transform.position);
-            mousePosition.x = mousePosition.x - objectPos.x;
-            mousePosition.y = mousePosition.y - objectPos.y;
-			float angle = Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg;
-	        //transform.rotation = Quaternion.Euler(0, 0, angle);
-			Quaternion _rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-			transform.rotation = Quaternion.Slerp (transform.rotation, _rotation, rotateSpeed*Time.deltaTime);
-        }
-    }*/
 
 void Jump() {
 		if (jump && gameObject.tag == "Player") {

@@ -1,0 +1,51 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD FirePro D700 (FireGL V) (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     6125 MB
+    Driver:   15.301.2101.0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\graphic\Downloads\GJGBC\TestingChamber_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.022 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.894671 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Setting up 12 worker threads for Enlighten.
+  Thread -> id: 880 -> priority: 1 
+  Thread -> id: 229c -> priority: 1 
+  Thread -> id: 2ed4 -> priority: 1 
+  Thread -> id: 21ac -> priority: 1 
+  Thread -> id: 3010 -> priority: 1 
+  Thread -> id: 2574 -> priority: 1 
+  Thread -> id: 2e5c -> priority: 1 
+  Thread -> id: 404 -> priority: 1 
+  Thread -> id: 3f74 -> priority: 1 
+  Thread -> id: 212c -> priority: 1 
+  Thread -> id: 3a60 -> priority: 1 
+  Thread -> id: 1f48 -> priority: 1 
+button triggered
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
